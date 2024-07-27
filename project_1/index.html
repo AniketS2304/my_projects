@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn-container{
+            display: flex;
+            justify-content: center;
+        }
+        .btn{
+            margin: 2.5rem;
+            border: 10px solid black;
+            border-radius:20%;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .red{
+            background-color: #db537b;
+        }
+        .green{
+            background-color: #58a9c2;
+        }
+        .yellow{
+            background-color: #fc983b;
+        }
+        .purple{
+            background-color: #8092f7;
+        }
+
+        .flash{
+            background-color: white;
+        }
+        .greenFlash{
+            background-color: green;
+        }
+
+    span{
+        color: blue;
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <h1>Simom Says Game</h1>   
+    <h1>Made by Aniket</h1>
+    <h2>Press any key start or <span>Click</span></h2>
+    <!-- सुरू करण्यासाठी कोणतीही कळी दाबा -->
+    <div class="btn-container">
+        <div class="line1">
+            <div id="red" class="btn red" typle="button"></div>
+            <div id="green" class="btn green" typle="button"></div>
+        </div>
+        <div class="line2">
+            <div id="yellow" class="btn yellow" typle="button"></div>
+            <div id="purple" class="btn purple" typle="button"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
